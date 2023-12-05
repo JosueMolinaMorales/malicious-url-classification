@@ -1,3 +1,4 @@
 *.model
 *.npy
 *.joblib
+venv
