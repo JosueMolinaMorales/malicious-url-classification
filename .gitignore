@@ -2,3 +2,5 @@
 *.npy
 *.joblib
 venv
+
+*csv
