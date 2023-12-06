@@ -79,7 +79,7 @@ generated_df = load_dataframe("./datasets/generated_urls_overnight.csv")
 # Trial 1
 
 trial1_train_df, trial1_test_df = create_trial_df(
-    original_df, generated_df, (150000, 150000, 0, 0)
+    original_df, generated_df, (200000, 200000, 0, 0)
 )
 os.makedirs("./datasets/trial_1", exist_ok=True)
 trial1_train_df.to_csv("./datasets/trial_1/train.csv", index=False)
@@ -88,7 +88,7 @@ trial1_test_df.to_csv("./datasets/trial_1/test.csv", index=False)
 # Trial 2
 
 trial2_train_df, trial2_test_df = create_trial_df(
-    original_df, generated_df, (0, 0, 150000, 150000)
+    original_df, generated_df, (0, 0, 200000, 200000)
 )
 os.makedirs("./datasets/trial_2", exist_ok=True)
 trial2_train_df.to_csv("./datasets/trial_2/train.csv", index=False)
@@ -97,7 +97,7 @@ trial2_test_df.to_csv("./datasets/trial_2/test.csv", index=False)
 # Trial 3
 
 trial3_train_df, trial3_test_df = create_trial_df(
-    original_df, generated_df, (75000, 75000, 75000, 75000)
+    original_df, generated_df, (200000, 200000, 200000, 200000)
 )
 os.makedirs("./datasets/trial_3", exist_ok=True)
 trial3_train_df.to_csv("./datasets/trial_3/train.csv", index=False)
@@ -106,7 +106,7 @@ trial3_test_df.to_csv("./datasets/trial_3/test.csv", index=False)
 # Trial 4
 
 trial4_train_df, trial4_test_df = create_trial_df(
-    original_df, generated_df, (0, 150000, 150000, 0)
+    original_df, generated_df, (0, 200000, 200000, 0)
 )
 os.makedirs("./datasets/trial_4", exist_ok=True)
 trial4_train_df.to_csv("./datasets/trial_4/train.csv", index=False)
@@ -115,7 +115,7 @@ trial4_test_df.to_csv("./datasets/trial_4/test.csv", index=False)
 # Trial 5
 
 trial5_train_df, trial5_test_df = create_trial_df(
-    original_df, generated_df, (150000, 0, 0, 150000)
+    original_df, generated_df, (200000, 0, 0, 200000)
 )
 os.makedirs("./datasets/trial_5", exist_ok=True)
 trial5_train_df.to_csv("./datasets/trial_5/train.csv", index=False)
